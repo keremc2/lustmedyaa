@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
+    <title>Lust Medya | Reklam, Influencer, Video & Web</title>
+    <meta name="description" content="Lust Medya; reklam yönetimi (Meta/Google/TikTok), influencer marketing, video prodüksiyon (kamera + yaka mikrofonu) ve dönüşüm odaklı web tasarım hizmetleri sunar. Markanızı dijitalde büyütelim.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="author" content="Lust Medya">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://lustmedya.com/">
+    <meta property="og:site_name" content="Lust Medya">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lust Medya | Reklam, Influencer, Video & Web">
+    <meta property="og:description" content="Reklam yönetimi, influencer marketing, video prodüksiyon ve dönüşüm odaklı web tasarım ile markanızı dijitalde büyütün.">
+    <meta property="og:url" content="https://lustmedya.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lust Medya | Reklam, Influencer, Video & Web">
+    <meta name="twitter:description" content="Reklam yönetimi, influencer marketing, video prodüksiyon ve dönüşüm odaklı web tasarım ile markanızı dijitalde büyütün.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f172a'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='24' font-family='Arial' fill='white'%3ELM%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MarketingAgency",
+            "name": "Lust Medya",
+            "url": "https://lustmedya.com/",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+            "email": "hello@lustmedya.com",
+            "telephone": "+905304584679",
+            "sameAs": [
+                "https://www.linkedin.com/in/lust-medya-b724763ba/?isSelfProfile=true"
+            ],
+            "areaServed": {
+                "@type": "Country",
+                "name": "Türkiye"
+            },
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+905304584679",
+                    "contactType": "customer service",
+                    "availableLanguage": ["tr"]
+                }
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Hizmetler",
+                "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reklam Yönetimi", "serviceType": "Performance Marketing" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Influencer Marketing", "serviceType": "Creator Marketing" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Video Prodüksiyon", "serviceType": "Content Production" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Tasarım", "serviceType": "Web Design" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marka Kimliği", "serviceType": "Brand Identity" } }
+                ]
+            },
+            "description": "Reklam yönetimi, influencer marketing, video prodüksiyon (kamera + yaka mikrofonu) ve dönüşüm odaklı web tasarım hizmetleri."
+        }
+    </script>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --accent: #f43f5e;
+            --bg-dark: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.8);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+            color: #1e293b;
+        }
+
+        .logo-font {
+            font-family: 'Syne', sans-serif;
+            letter-spacing: -0.05em;
+        }
+
+        /* Grainy Overlay Effect */
+        .grain {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Ffilter id='noiseFilter'%3E%3FfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3F/filter%3E%3Frect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3F/svg%3E");
+        }
+
+        /* Animated Mesh Gradient */
+        .mesh-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(99, 102, 241, 0.1) 0px, transparent 50%);
+            filter: blur(100px);
+            animation: meshMove 20s ease infinite alternate;
+        }
+
+        @keyframes meshMove {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: textGradient 5s ease infinite;
+        }
+
+        @keyframes textGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .bento-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 2rem;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bento-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.05);
+            border-color: var(--primary);
+        }
+
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1;
+        }
+
+        .btn-modern::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 0%; height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+
+        .btn-modern:hover::before { width: 100%; }
+        .btn-modern:hover { transform: scale(1.02); }
+
+        /* Floating Animation */
+        .float { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .input-focus:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+            outline: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        details summary::-webkit-details-marker { display: none; }
+        details summary span { transition: transform 0.25s ease; }
+        details[open] summary span { transform: rotate(45deg); }
+
+        .dark-selection ::selection { background: rgba(99, 102, 241, 0.35); color: #ffffff; }
+        .dark-selection ::-moz-selection { background: rgba(99, 102, 241, 0.35); color: #ffffff; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body class="selection:bg-indigo-100 selection:text-indigo-900">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-xl focus:shadow-2xl">İçeriğe atla</a>
+    <div class="grain"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 glass z-50 border-b border-white/20">
+        <nav class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                <div class="leading-none">
+                    <div class="text-xl sm:text-2xl font-extrabold logo-font gradient-text tracking-tighter">LUST.MEDYA</div>
+                    <div class="text-[10px] sm:text-xs font-black text-slate-500 uppercase tracking-[0.28em]">Medya &amp; Kreatif</div>
+                </div>
+            </a>
+            <div class="hidden lg:flex space-x-12 font-bold text-slate-600 text-sm uppercase tracking-widest">
+                <a href="#home" class="hover:text-indigo-600 transition-all relative group">
+                    Ana Sayfa
+                    <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#services" class="hover:text-indigo-600 transition-all relative group">
+                    Hizmetler
+                    <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#portfolio" class="hover:text-indigo-600 transition-all relative group">
+                    Portfolyo
+                    <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="hover:text-indigo-600 transition-all relative group">
+                    Biz Kimiz?
+                    <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            <a href="#contact" class="btn-modern bg-slate-900 text-white px-8 py-3 rounded-full hover:shadow-2xl transition font-black text-xs uppercase tracking-widest">
+                Teklif Al
+            </a>
+        </nav>
+    </header>
+
+    <main id="main">
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-64 pb-40 overflow-hidden min-h-screen flex items-center">
+        <div class="mesh-bg"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-3 py-2 px-5 rounded-full bg-white/50 border border-white/50 backdrop-blur-sm mb-8 animate-bounce">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                    </span>
+                    <span class="text-indigo-600 font-bold text-xs uppercase tracking-widest">Dijital Büyüme Ortağınız</span>
+                </div>
+                <h1 class="text-7xl md:text-9xl font-black mb-10 tracking-tighter leading-[0.9] logo-font">
+                    Sıradanlığı <br><span class="gradient-text italic">Etkiye</span> Dönüştürün
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-500 mb-14 leading-relaxed font-medium max-w-3xl mx-auto">
+                    Reklam yönetimi, influencer marketing, video prodüksiyonu ve dönüşüm odaklı web tasarımı ile markanızı dijitalin zirvesine taşıyoruz.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-5 sm:space-y-0 sm:space-x-8">
+                    <a href="#services" class="btn-modern bg-indigo-600 text-white px-12 py-6 rounded-3xl hover:bg-indigo-700 transition font-black text-lg shadow-2xl shadow-indigo-200 w-full sm:w-auto uppercase tracking-tighter">
+                        Hizmetleri Keşfet
+                    </a>
+                    <a href="#contact" class="btn-modern bg-white text-slate-900 border border-slate-200 px-12 py-6 rounded-3xl hover:bg-slate-50 transition font-black text-lg w-full sm:w-auto uppercase tracking-tighter">
+                        Bize Ulaşın
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Abstract Elements -->
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-indigo-400/20 rounded-full blur-[120px] float"></div>
+        <div class="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-purple-400/20 rounded-full blur-[120px] float" style="animation-delay: -3s"></div>
+    </section>
+
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="reveal bento-card p-10">
+                    <div class="w-14 h-14 rounded-3xl bg-indigo-100 flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-bolt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <div class="text-xl font-black tracking-tighter">Hızlı İletişim</div>
+                    <div class="mt-3 text-slate-500 font-medium leading-relaxed">WhatsApp ve e‑posta üzerinden net, hızlı ve planlı geri dönüş.</div>
+                </div>
+                <div class="reveal bento-card p-10" style="transition-delay: 0.08s">
+                    <div class="w-14 h-14 rounded-3xl bg-slate-100 flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-chart-simple text-slate-700 text-2xl"></i>
+                    </div>
+                    <div class="text-xl font-black tracking-tighter">Şeffaf Raporlama</div>
+                    <div class="mt-3 text-slate-500 font-medium leading-relaxed">Reklam ve performans verilerini anlaşılır raporlarla düzenli takip.</div>
+                </div>
+                <div class="reveal bento-card p-10" style="transition-delay: 0.16s">
+                    <div class="w-14 h-14 rounded-3xl bg-rose-100 flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-video text-rose-600 text-2xl"></i>
+                    </div>
+                    <div class="text-xl font-black tracking-tighter">Prodüksiyon</div>
+                    <div class="mt-3 text-slate-500 font-medium leading-relaxed">Kamera + yaka mikrofonu ile net ses; sosyal medya formatlarına uygun temiz prodüksiyon.</div>
+                </div>
+                <div class="reveal bento-card p-10" style="transition-delay: 0.24s">
+                    <div class="w-14 h-14 rounded-3xl bg-purple-100 flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-wand-magic-sparkles text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="text-xl font-black tracking-tighter">Dönüşüm Odaklı Tasarım</div>
+                    <div class="mt-3 text-slate-500 font-medium leading-relaxed">Hızlı, mobil uyumlu ve SEO temelli arayüzlerle güçlü ilk izlenim.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Bento Grid) -->
+    <section id="services" class="py-40 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-10">
+                <div class="max-w-3xl">
+                    <h2 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter logo-font uppercase">Neler <span class="text-indigo-600">Yapıyoruz?</span></h2>
+                    <p class="text-2xl text-slate-500 font-medium leading-relaxed">İşletmenizi dijital dünyada bir adım öne çıkaracak, veri odaklı ve estetik çözümler sunuyoruz.</p>
+                </div>
+                <div class="h-px w-full lg:w-32 bg-slate-200 mb-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Large Card: Reklam Yönetimi -->
+                <div class="reveal md:col-span-8 p-12 bento-card group">
+                    <div class="flex flex-col h-full justify-between">
+                        <div>
+                            <div class="w-16 h-16 bg-indigo-100 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-indigo-600 group-hover:rotate-12 transition-all duration-500">
+                                <i class="fa-solid fa-rectangle-ad text-indigo-600 text-2xl group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-4xl font-black mb-6 tracking-tighter uppercase logo-font">Reklam Yönetimi</h3>
+                            <p class="text-xl text-slate-500 leading-relaxed font-medium max-w-xl">Meta, Google ve TikTok reklamlarında yüksek dönüşüm (ROI) odaklı, veriye dayalı ölçekleme stratejileriyle markanızı büyütüyoruz.</p>
+                        </div>
+                        <div class="mt-12 flex space-x-4">
+                            <span class="py-2 px-4 bg-slate-100 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest">Meta Ads</span>
+                            <span class="py-2 px-4 bg-slate-100 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest">Google PPC</span>
+                            <span class="py-2 px-4 bg-slate-100 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest">TikTok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Card: Marka Kimliği -->
+                <div class="reveal md:col-span-4 p-12 bento-card group bg-slate-900 text-white dark-selection" style="transition-delay: 0.1s">
+                    <div class="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-purple-500 group-hover:-rotate-12 transition-all duration-500">
+                        <i class="fa-solid fa-id-card text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-black mb-6 tracking-tighter uppercase logo-font">Marka Kimliği</h3>
+                    <p class="text-lg text-slate-400 leading-relaxed font-medium">Sizi yansıtan, akılda kalıcı ve tutarlı görsel marka dünyası.</p>
+                </div>
+
+                <div class="reveal md:col-span-12 p-12 bento-card group" style="transition-delay: 0.15s">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
+                        <div class="max-w-3xl">
+                            <div class="w-16 h-16 bg-emerald-100 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-emerald-500 transition-all duration-500">
+                                <i class="fa-solid fa-users text-emerald-600 text-2xl group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-4xl font-black mb-6 tracking-tighter uppercase logo-font">Influencer Marketing</h3>
+                            <p class="text-xl text-slate-500 leading-relaxed font-medium">
+                                Markanıza uygun influencer/creator eşleştirmesi, brief yönetimi ve içerik yayın planı ile görünürlüğü artırıp dönüşümü destekliyoruz.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="py-2 px-4 bg-slate-100 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest">Brief</span>
+                            <span class="py-2 px-4 bg-slate-100 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest">UGC</span>
+                            <span class="py-2 px-4 bg-slate-100 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest">Yayın Planı</span>
+                            <span class="py-2 px-4 bg-slate-100 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest">Raporlama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Card: Video Prodüksiyon -->
+                <div class="reveal md:col-span-6 p-12 bento-card group" style="transition-delay: 0.2s">
+                    <div class="w-16 h-16 bg-rose-100 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-rose-500 transition-all duration-500">
+                        <i class="fa-solid fa-video text-rose-600 text-2xl group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-black mb-6 tracking-tighter uppercase logo-font">Video Prodüksiyon</h3>
+                    <p class="text-lg text-slate-500 leading-relaxed font-medium">Kamera + yaka mikrofonu ile net ses; kısa format odaklı çekim ve kurgu.</p>
+                </div>
+
+                <!-- Medium Card: Web Tasarım -->
+                <div class="reveal md:col-span-6 p-12 bento-card group" style="transition-delay: 0.3s">
+                    <div class="w-16 h-16 bg-blue-100 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-blue-500 transition-all duration-500">
+                        <i class="fa-solid fa-laptop-code text-blue-600 text-2xl group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-black mb-6 tracking-tighter uppercase logo-font">Web Tasarım</h3>
+                    <p class="text-lg text-slate-500 leading-relaxed font-medium">Sadece güzel değil, hızlı ve satış odaklı çalışan modern web arayüzleri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-40 bg-slate-50 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto mb-32">
+                <h2 class="text-5xl md:text-7xl font-black mb-10 tracking-tighter logo-font uppercase">Neler <span class="gradient-text">Başardık?</span></h2>
+                <p class="text-2xl text-slate-500 font-medium">Son dönemde hayata geçirdiğimiz seçkin projelerden bazıları.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Project 1 -->
+                <div class="reveal group relative overflow-hidden rounded-[3rem] aspect-[3/4] shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reklam yönetimi projesi görseli" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-12 w-full">
+                        <span class="inline-block py-1 px-4 rounded-full bg-white/10 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest mb-4">E-Ticaret</span>
+                        <h4 class="text-3xl font-black text-white logo-font uppercase tracking-tighter">Growth Strategy</h4>
+                        <p class="text-slate-300 mt-4 text-sm font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Örnek çalışma: hedef kitle, kreatif seti ve landing akışı tasarlandı.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="reveal group relative overflow-hidden rounded-[3rem] aspect-[3/4] shadow-2xl" style="transition-delay: 0.1s">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Video prodüksiyon projesi görseli" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-12 w-full">
+                        <span class="inline-block py-1 px-4 rounded-full bg-white/10 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest mb-4">Video Prodüksiyon</span>
+                        <h4 class="text-3xl font-black text-white logo-font uppercase tracking-tighter">Cinematic Story</h4>
+                        <p class="text-slate-300 mt-4 text-sm font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Planlı prodüksiyon süreci ile marka kimliği güçlendirildi.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="reveal group relative overflow-hidden rounded-[3rem] aspect-[3/4] shadow-2xl" style="transition-delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web tasarım projesi görseli" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-12 w-full">
+                        <span class="inline-block py-1 px-4 rounded-full bg-white/10 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest mb-4">Web UI/UX</span>
+                        <h4 class="text-3xl font-black text-white logo-font uppercase tracking-tighter">Premium Platform</h4>
+                        <p class="text-slate-300 mt-4 text-sm font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Dönüşüm odaklı, modern ve ultra hızlı kullanıcı arayüzü.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (High End) -->
+    <section id="about" class="py-40 bg-slate-950 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_100%_0%,rgba(99,102,241,0.1)_0%,transparent_50%)]"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-32">
+                <div class="lg:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-[4rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" alt="Lust Medya ekip çalışması" loading="lazy" decoding="async" class="relative rounded-[3rem] shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-1000">
+                        <div class="absolute -bottom-10 -right-10 bg-white p-10 rounded-[3rem] text-slate-950 shadow-2xl hidden xl:block">
+                            <p class="text-5xl font-black logo-font tracking-tighter">7/24</p>
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mt-2">Stratejik Destek</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-6xl md:text-8xl font-black mb-12 tracking-tighter italic logo-font uppercase">Biz <span class="text-indigo-500">Kimiz?</span></h2>
+                    <p class="text-2xl text-slate-400 mb-16 leading-relaxed font-medium">
+                        Lust Medya olarak biz, dijitalin bir platform değil, bir büyüme alanı olduğuna inanıyoruz. Veri analitiğini kreatif tasarım ile harmanlayarak, markaların potansiyelini gerçeğe dönüştürüyoruz.
+                    </p>
+                    <div class="space-y-10">
+                        <div class="flex items-start space-x-8 group">
+                            <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center group-hover:bg-indigo-500 transition-colors duration-500">
+                                <i class="fa-solid fa-camera-retro text-indigo-400 group-hover:text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 uppercase tracking-tighter">Video İçerik Üretimi</h4>
+                                <p class="text-slate-500 text-lg">Kamera ve yaka mikrofonu ile çekim yapıyor, sosyal medya için temiz ve anlaşılır içerikler üretiyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-8 group">
+                            <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center group-hover:bg-purple-500 transition-colors duration-500">
+                                <i class="fa-solid fa-chart-pie text-purple-400 group-hover:text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 uppercase tracking-tighter">Veri Odaklı Strateji</h4>
+                                <p class="text-slate-500 text-lg">Kararlarımızı tahminlerle değil, gerçek kullanıcı verileri ve pazar analizleriyle alıyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-40 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto mb-32">
+                <h2 class="text-5xl md:text-7xl font-black mb-10 tracking-tighter logo-font uppercase">Nasıl <span class="text-indigo-600">Çalışıyoruz?</span></h2>
+                <p class="text-2xl text-slate-500 font-medium leading-relaxed">Başarıya giden yolculuğumuzda izlediğimiz şeffaf ve profesyonel süreç.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Step 1 -->
+                <div class="reveal text-center">
+                    <div class="w-24 h-24 bg-slate-50 rounded-[2.5rem] flex items-center justify-center mx-auto mb-10 border border-slate-100 relative group hover:border-indigo-500 transition-all duration-500">
+                        <span class="text-3xl font-black text-slate-300 group-hover:text-indigo-600 transition-colors">01</span>
+                    </div>
+                    <h4 class="text-2xl font-black mb-4 uppercase tracking-tighter logo-font">Strateji</h4>
+                    <p class="text-slate-500 font-medium">Hedeflerinizi analiz ediyor ve yol haritasını çıkarıyoruz.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="reveal text-center" style="transition-delay: 0.1s">
+                    <div class="w-24 h-24 bg-slate-50 rounded-[2.5rem] flex items-center justify-center mx-auto mb-10 border border-slate-100 relative group hover:border-purple-500 transition-all duration-500">
+                        <span class="text-3xl font-black text-slate-300 group-hover:text-purple-600 transition-colors">02</span>
+                    </div>
+                    <h4 class="text-2xl font-black mb-4 uppercase tracking-tighter logo-font">Kreatif</h4>
+                    <p class="text-slate-500 font-medium">Markanızın ruhunu yansıtan özgün tasarımlar üretiyoruz.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="reveal text-center" style="transition-delay: 0.2s">
+                    <div class="w-24 h-24 bg-slate-50 rounded-[2.5rem] flex items-center justify-center mx-auto mb-10 border border-slate-100 relative group hover:border-rose-500 transition-all duration-500">
+                        <span class="text-3xl font-black text-slate-300 group-hover:text-rose-600 transition-colors">03</span>
+                    </div>
+                    <h4 class="text-2xl font-black mb-4 uppercase tracking-tighter logo-font">Uygulama</h4>
+                    <p class="text-slate-500 font-medium">Strateji ve kreatif işleri hayata geçiriyoruz.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="reveal text-center" style="transition-delay: 0.3s">
+                    <div class="w-24 h-24 bg-slate-50 rounded-[2.5rem] flex items-center justify-center mx-auto mb-10 border border-slate-100 relative group hover:border-green-500 transition-all duration-500">
+                        <span class="text-3xl font-black text-slate-300 group-hover:text-green-600 transition-colors">04</span>
+                    </div>
+                    <h4 class="text-2xl font-black mb-4 uppercase tracking-tighter logo-font">Analiz</h4>
+                    <p class="text-slate-500 font-medium">Sonuçları takip ediyor ve sürekli geliştiriyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-40 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <h2 class="text-5xl md:text-7xl font-black mb-10 tracking-tighter logo-font uppercase">Sık Sorulan <span class="text-indigo-600">Sorular</span></h2>
+                <p class="text-2xl text-slate-500 font-medium leading-relaxed">Kısaca süreç, teslim ve çalışma modeli.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+                <details class="bento-card p-8">
+                    <summary class="cursor-pointer select-none text-xl font-black tracking-tighter flex items-center justify-between">
+                        Reklam yönetimi sürecinde neler yapıyorsunuz?
+                        <span class="text-slate-400 font-black">+</span>
+                    </summary>
+                    <div class="mt-4 text-slate-500 font-medium leading-relaxed">
+                        Hedef ve kitle analizi, kreatif yönlendirme, kampanya kurulumu, optimizasyon ve düzenli raporlama ile süreci uçtan uca yönetiyoruz.
+                    </div>
+                </details>
+
+                <details class="bento-card p-8">
+                    <summary class="cursor-pointer select-none text-xl font-black tracking-tighter flex items-center justify-between">
+                        Video prodüksiyonda ekipman ve teslim formatı nasıl?
+                        <span class="text-slate-400 font-black">+</span>
+                    </summary>
+                    <div class="mt-4 text-slate-500 font-medium leading-relaxed">
+                        Kamera ve yaka mikrofonu ile çekim yapıyoruz; içerikleri Reels/TikTok/YouTube Shorts formatlarına uygun teslim ediyoruz.
+                    </div>
+                </details>
+
+                <details class="bento-card p-8">
+                    <summary class="cursor-pointer select-none text-xl font-black tracking-tighter flex items-center justify-between">
+                        Web sitesi neye göre hazırlanıyor?
+                        <span class="text-slate-400 font-black">+</span>
+                    </summary>
+                    <div class="mt-4 text-slate-500 font-medium leading-relaxed">
+                        Hedef, kullanıcı yolculuğu ve dönüşüm noktalarına göre tasarlıyoruz. Mobil uyumluluk, hız ve temel SEO kriterleri standart.
+                    </div>
+                </details>
+
+                <details class="bento-card p-8">
+                    <summary class="cursor-pointer select-none text-xl font-black tracking-tighter flex items-center justify-between">
+                        Nasıl başlayacağız?
+                        <span class="text-slate-400 font-black">+</span>
+                    </summary>
+                    <div class="mt-4 text-slate-500 font-medium leading-relaxed">
+                        WhatsApp veya e‑posta ile brief alıyoruz; hedefleri netleştirip planı çıkarıyoruz. Sonrasında üretim ve yayın sürecine geçiyoruz.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-40 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto bg-white rounded-[4rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-white">
+                <div class="lg:w-1/2 p-16 lg:p-24 bg-slate-950 text-white relative">
+                    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_0%_0%,rgba(99,102,241,0.15)_0%,transparent_50%)]"></div>
+                    <h2 class="text-5xl font-black mb-10 tracking-tighter uppercase logo-font">Hemen <br><span class="text-indigo-500">Başlayalım</span></h2>
+                    <p class="text-xl text-slate-400 mb-16 leading-relaxed">Projeniz hakkında detayları paylaşın, 24 saat içinde size özel stratejimizle dönüş yapalım.</p>
+                    
+                    <div class="space-y-10 relative z-10">
+                        <div class="flex items-center space-x-6">
+                            <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope text-indigo-400 text-xl"></i>
+                            </div>
+                            <a href="mailto:hello@lustmedya.com" class="text-xl text-slate-200 font-bold hover:text-white transition-colors">hello@lustmedya.com</a>
+                        </div>
+                        <div class="flex items-center space-x-6">
+                            <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+                                <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+                            </div>
+                            <a href="https://wa.me/905304584679" target="_blank" rel="noopener noreferrer" class="text-xl text-slate-200 font-bold hover:text-white transition-colors">+90 530 458 46 79</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 p-16 lg:p-24">
+                    <form id="contactForm" class="space-y-10">
+                        <div class="relative">
+                            <input name="name" type="text" placeholder="ADINIZ SOYADINIZ" autocomplete="name" class="w-full pb-4 bg-transparent border-b-2 border-slate-100 focus:border-indigo-600 transition-colors font-black uppercase tracking-widest text-xs outline-none" required>
+                        </div>
+                        <div class="relative">
+                            <input name="phone" type="tel" placeholder="TELEFON NUMARANIZ" inputmode="tel" autocomplete="tel" class="w-full pb-4 bg-transparent border-b-2 border-slate-100 focus:border-indigo-600 transition-colors font-black uppercase tracking-widest text-xs outline-none">
+                        </div>
+                        <div class="relative">
+                            <input name="email" type="email" placeholder="E-POSTA ADRESİNİZ" autocomplete="email" class="w-full pb-4 bg-transparent border-b-2 border-slate-100 focus:border-indigo-600 transition-colors font-black uppercase tracking-widest text-xs outline-none" required>
+                        </div>
+                        <div class="relative">
+                            <textarea name="message" rows="4" placeholder="PROJENİZDEN BAHSEDİN..." class="w-full pb-4 bg-transparent border-b-2 border-slate-100 focus:border-indigo-600 transition-colors font-black uppercase tracking-widest text-xs outline-none resize-none" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-modern bg-indigo-600 text-white py-6 rounded-3xl font-black text-lg uppercase tracking-widest shadow-2xl shadow-indigo-100">
+                            Mesajı Gönder
+                        </button>
+                        <div id="contactStatus" class="text-sm font-bold text-slate-500"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-32 border-t border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center mb-16">
+                <div>
+                    <div class="text-4xl font-extrabold logo-font gradient-text tracking-tighter">LUST.MEDYA</div>
+                    <div class="mt-3 text-[10px] sm:text-xs font-black text-slate-400 uppercase tracking-[0.28em]">Medya &amp; Kreatif</div>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-12 mb-16">
+                <a href="#" aria-label="Instagram" class="text-slate-300 hover:text-indigo-600 transition-all text-3xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/lust-medya-b724763ba/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-slate-300 hover:text-indigo-600 transition-all text-3xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/905304584679" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-slate-300 hover:text-green-500 transition-all text-3xl"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="text-slate-400 font-bold text-xs uppercase tracking-[0.3em]">&copy; 2026 Lust Medya. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    </main>
+
+    <a href="https://wa.me/905304584679" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geç" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-2xl shadow-2xl flex items-center justify-center hover:bg-green-600 transition-colors">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        // Scroll Reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        const contactForm = document.getElementById('contactForm');
+        const contactStatus = document.getElementById('contactStatus');
+
+        if (contactForm && contactStatus) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                contactStatus.textContent = 'Gönderiliyor...';
+
+                const formData = new FormData(contactForm);
+                const payload = {
+                    name: String(formData.get('name') || ''),
+                    phone: String(formData.get('phone') || ''),
+                    email: String(formData.get('email') || ''),
+                    message: String(formData.get('message') || '')
+                };
+
+                try {
+                    const res = await fetch('/contact', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const data = await res.json().catch(() => ({}));
+                    if (res.ok && data && data.ok) {
+                        contactStatus.textContent = 'Gönderildi. En kısa sürede dönüş yapacağız.';
+                        contactForm.reset();
+                    } else {
+                        contactStatus.textContent = 'Gönderim başarısız. Lütfen WhatsApp üzerinden yazın.';
+                    }
+                } catch (err) {
+                    contactStatus.textContent = 'Gönderim başarısız. Lütfen WhatsApp üzerinden yazın.';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
